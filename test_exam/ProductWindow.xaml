@@ -1,0 +1,32 @@
+﻿<Window x:Class="test_exam.ProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Товар" Height="500" Width="400" WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="20">
+        <TextBlock Text="Артикул:"/>
+        <TextBox x:Name="TbArticle" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Название:"/>
+        <TextBox x:Name="TbName" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Цена:"/>
+        <TextBox x:Name="TbPrice" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Поставщик:"/>
+        <TextBox x:Name="TbPostav" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Скидка (%):"/>
+        <TextBox x:Name="TbSale" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Кол-во на складе:"/>
+        <TextBox x:Name="TbCount" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Описание:"/>
+        <TextBox x:Name="TbInfo" Height="60" TextWrapping="Wrap" Margin="0,0,0,20"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Сохранить" Click="BtnSave_Click" Width="100"/>
+            <Button Content="Отмена" Click="BtnCancel_Click" Width="100" Background="#FFD3D3D3"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
